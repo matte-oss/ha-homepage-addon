@@ -1,14 +1,13 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-dockerfile
 build_from:
-  aarch64: "ghcr.io/home-assistant/aarch64-base:3.15"
-  amd64: "ghcr.io/home-assistant/amd64-base:3.15"
-  armhf: "ghcr.io/home-assistant/armhf-base:3.15"
-  armv7: "ghcr.io/home-assistant/armv7-base:3.15"
-  i386: "ghcr.io/home-assistant/i386-base:3.15"
+  amd64: "ghcr.io/gethomepage/homepage:v0.9.13@sha256:396356a07e05d904a233ed54358ffd1cccbd6e57f1a7148bcf88d88cedaa4c25"
+  arm64: "ghcr.io/gethomepage/homepage:v0.9.13@sha256:f062a69372c763c0c4190eeacb00a72feeaae025f64b016b60bee2d1b6f99468"
+  armv6: "ghcr.io/gethomepage/homepage:v0.9.13@sha256:619b0dbf195da6baeccbc18b910878a62a987d0598e0ddf4c0806e6a056b8cb8"
+  armv7: "ghcr.io/gethomepage/homepage:v0.9.13@sha256:8a4adff492317b889619f888cd15d256f79eaebee10182a5d97591b76e9b6fc3"
 labels:
-  org.opencontainers.image.title: "Home Assistant Add-on: Example add-on"
-  org.opencontainers.image.description: "Example add-on to use as a blueprint for new add-ons."
-  org.opencontainers.image.source: "https://github.com/home-assistant/addons-example"
-  org.opencontainers.image.licenses: "Apache License 2.0"
+  org.opencontainers.image.title: "Home Assistant Add-on: Homepage"
+  org.opencontainers.image.description: "Homepage addon for HA"
+  org.opencontainers.image.source: "https://github.com/matte-oss/ha-homepage-addon"
+  org.opencontainers.image.licenses: "Apache License 2.0" #TODO: Fix license
 args:
   TEMPIO_VERSION: "2021.09.0"
